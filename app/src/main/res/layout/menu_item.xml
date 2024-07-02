@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="323dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="22dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/foodImageMenu"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/foodNameMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/advent_pro_bold"
+                android:text="Food Name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/foodImageMenu"
+                app:layout_constraintTop_toTopOf="@+id/foodImageMenu"
+                app:layout_constraintVertical_bias="0.235" />
+
+            <TextView
+                android:id="@+id/addToCartMenu"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@drawable/addtocartshape"
+                android:fontFamily="@font/advent_pro_bold"
+                android:gravity="center"
+                android:text="Add to cart"
+                android:textColor="#FDF6FE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/priceMenu"
+                app:layout_constraintStart_toStartOf="@+id/priceMenu"
+                app:layout_constraintTop_toBottomOf="@+id/priceMenu" />
+
+            <TextView
+                android:id="@+id/priceMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="54dp"
+                android:fontFamily="@font/advent_pro_bold"
+                android:text="50 Rs."
+                android:textColor="#2DCE7E"
+                app:layout_constraintBottom_toBottomOf="@+id/foodNameMenu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/foodNameMenu"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

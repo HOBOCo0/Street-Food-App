@@ -16,6 +16,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // dependency for image slider
+        maven (  "https://jitpack.io" )
     }
 }
 

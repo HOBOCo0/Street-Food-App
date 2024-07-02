@@ -4,5 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="brown_black_background">#231F20</color>
     <color name="green_text_color">#8AC43F</color>
-
+    <color name="startColor">#53E88B</color>
+    <color name="endColor">#15BE77</color>
+    <color name="iconColor">#FEAD1D</color>
 </resources>

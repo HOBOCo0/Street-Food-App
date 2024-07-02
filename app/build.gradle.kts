@@ -40,6 +40,8 @@ android {
 
 dependencies {
 
+    // dependency for image slider
+    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
