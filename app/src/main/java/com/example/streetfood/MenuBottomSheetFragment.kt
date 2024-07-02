@@ -11,8 +11,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 /*
    This fragment implements bottom sheet for menu items
-
- */
+*/
 
 class MenuBottomSheetFragment : BottomSheetDialogFragment() {
 
@@ -35,13 +34,16 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
             dismiss()
         }
         val menuFoodName = listOf("Burger","Sandwich","momo","spring roll","spring roll","spring" +
-                " roll","spring roll","spring roll","Burger","Sandwich","momo","spring roll","spring roll","spring roll","spring roll","spring roll"  )
+                " roll","spring roll","spring roll","Burger","Sandwich","momo","spring roll","spring roll",
+            "spring roll","spring roll","spring roll"  )
 
         val menuFoodPrice = listOf("50 Rs", "60 Rs", "120 Rs", "80 Rs", "80 Rs", "80 Rs",
             "80 Rs", "80 Rs","50 Rs", "60 Rs", "120 Rs", "80 Rs", "80 Rs", "80 Rs", "80 Rs", "80 Rs")
 
         val menuFoodImage = listOf(R.drawable.menu1,R.drawable.menu2,R.drawable.menu4,
-            R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu1,R.drawable.menu2,R.drawable.menu4,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6)
+            R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,
+            R.drawable.menu1,R.drawable.menu2,R.drawable.menu4,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,
+            R.drawable.menu6,R.drawable.menu6)
 
         val adapter = MenuAdapter(ArrayList(menuFoodName),ArrayList(menuFoodPrice),ArrayList(menuFoodImage))
         binding.recyclerViewMenu.layoutManager = LinearLayoutManager(requireContext())

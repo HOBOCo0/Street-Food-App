@@ -35,7 +35,8 @@ class CartFragment : Fragment() {
             "80 Rs", "80 Rs","50 Rs", "60 Rs", "120 Rs", "80 Rs", "80 Rs", "80 Rs", "80 Rs", "80 Rs")
 
         val cartFoodImage = listOf(R.drawable.menu1,R.drawable.menu2,R.drawable.menu4,
-            R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu1,R.drawable.menu2,R.drawable.menu4,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6)
+            R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu1,R.drawable.menu2,
+            R.drawable.menu4,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6)
 
         val adapter = CartAdapter(ArrayList(cartFoodName),ArrayList(cartFoodPrice),ArrayList(cartFoodImage))
         binding.recyclerViewCart.layoutManager = LinearLayoutManager(requireContext())
