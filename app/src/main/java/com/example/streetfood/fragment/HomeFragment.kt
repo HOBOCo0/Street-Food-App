@@ -70,7 +70,7 @@ class HomeFragment : Fragment() {
         val popularFoodImage = listOf(R.drawable.menu1,R.drawable.menu2,R.drawable.menu4,
             R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu1,R.drawable.menu2,R.drawable.menu4,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6,R.drawable.menu6)
 
-        val adapter = PopularAdapter(popularFoodName,popularFoodImage,popularFoodPrice)
+        val adapter = PopularAdapter(popularFoodName,popularFoodImage,popularFoodPrice,requireContext())
         binding.popularRecycleView.layoutManager = LinearLayoutManager(requireContext(),RecyclerView.VERTICAL,false)
         binding.popularRecycleView.adapter = adapter
     }
